@@ -1,1 +1,0 @@
-import './activity-card.scss';
