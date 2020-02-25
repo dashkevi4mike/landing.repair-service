@@ -96,5 +96,6 @@ module.exports = new configurator.default().extend('conf/webpack.base.config.js'
     hot: true,
     contentBase: 'dist',
     host: '0.0.0.0',
+    port: 3000,
   },
 });

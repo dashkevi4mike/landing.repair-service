@@ -1,7 +1,7 @@
 {
-  "name": "fsd-flat-starter-kit",
+  "name": "repair-landing",
   "version": "1.0.0",
-  "description": "Starter Kit for simple HTML+CSS pages (flat-pages) built by FSD team",
+  "description": "Pet project",
   "engines": {
     "node": ">=7.0.0"
   },
@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fullstack-development/flat-starter-kit.git"
+    "url": "git+https://github.com/dashkevi4mike/repair-landing.git"
   },
   "keywords": [
     "Starter Kit",
@@ -47,12 +47,8 @@
     "Webpack",
     "BEM"
   ],
-  "author": "Fullstack Development Llc",
+  "author": "Mikhail Dashkevich",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fullstack-development/flat-starter-kit/issues"
-  },
-  "homepage": "https://github.com/fullstack-development/flat-starter-kit#readme",
   "dependencies": {
     "autoprefixer": "^6.7.7",
     "babel-core": "^6.24.0",

@@ -1,5 +1,5 @@
-# flat-starter-kit
-Starter Kit for PSD-to-HTML projects with Webpack, Jade and Stylus
+# repair-landing
+This project uses Starter Kit for PSD-to-HTML projects with Webpack, Jade and Stylus
 
 ## Features
 We use Pug and Stylus to create static layout page for our clients who desires qualified "PSD to HTML" work. 
