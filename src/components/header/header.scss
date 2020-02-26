@@ -1,3 +1,5 @@
+@import '~theme/variables.scss';
+
 .header {
   display: flex;
   flex: 1 0 auto;
@@ -7,14 +9,36 @@
   .header__logo {
     flex: 0 0 auto;
     text-decoration: none;
-    color: white;
+    text-transform: uppercase;
+    color: $color-second;
     font-family: sans-serif;
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 1.16rem;
   }
 
   .header__menu {
     flex: 1 0 auto;
     padding-left: 1rem;
+  }
+
+  &__phone {
+    padding: 1rem 4rem;
+    text-align: center;
+    text-decoration: none;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: $color-second;
+    background-color: $color-first;
+    font-family: sans-serif;
+    font-size: 1.16rem;
+
+    @include media-breakpoint-down($md) {
+      display: none;
+    }
+  }
+
+  &__request-call {
+    @include media-breakpoint-down($md) {
+      display: none;
+    }
   }
 }

@@ -5,21 +5,17 @@
   flex-direction: column;
   height: 100%;
 
-  &__header {
+  &__header,
+  &__footer {
     display: flex;
     flex: 0 0 auto;
+    height: 6.92rem;
     background-color: $color-first;
   }
 
   &__main {
     display: flex;
     flex: 1 0 auto;
-  }
-
-  &__footer {
-    display: flex;
-    flex: 0 0 auto;
-    background-color: $color-second;
   }
 
   &__container {

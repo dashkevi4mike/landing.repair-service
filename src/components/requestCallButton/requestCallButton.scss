@@ -1,0 +1,15 @@
+@import '~theme/variables.scss';
+
+.request-call-button {
+  padding: 13px 33px;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 2px;
+  background-color: $color-second;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: #e6b465;
+  }
+}

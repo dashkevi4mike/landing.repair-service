@@ -1,4 +1,5 @@
 include ../menu/menu
+include ../requestCallButton/requestCallButton
 
 //-
   options.menuItems - массив елементов меню
@@ -8,7 +9,10 @@ mixin header(options)
     - options = {}
 
   .header
-    a.header__logo(href = '/home.html')
-      | Flat
+    a.header__logo(href = '/under-construction.html')
+      | IC "Repair Design Project"
     .header__menu
       +menu({items: options.menuItems})
+    a.header__phone(href='tel:' + options.tel)=options.tel
+    .header__request-call
+      +requestCallButton(options)
