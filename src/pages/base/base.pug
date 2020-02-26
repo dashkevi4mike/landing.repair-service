@@ -4,6 +4,7 @@ block variables
 include ../../components/layout/layout
 include ../../components/header/header
 
+
 doctype html
 html
   head
@@ -18,7 +19,7 @@ html
           block header
             +header({menuItems: locals.menuItems, tel: '+7 (928) 768-32-39'})
       +layout__main()
-        +layout__container({basis: 1200, align: 'center'})
+        +layout__container({ align: 'center'})
           block main
       +layout__footer()
         +layout__container({basis: 1200, align: 'center'})
