@@ -6,11 +6,9 @@ $md: 991px;
 $lg: 1199px;
 $xl: 1440px;
 
-$color-first: #4eb7a8;
-$color-second: #e75735;
-$color-first-dark: #28a290;
-$color-second-dark: #bf3e1f;
-$color-disabled: #e5e5e5;
+$color-first: #131313;
+$color-second: #e3b873;
+$color-second-active: #e3b873;
 
 /***** Mixins *****/
 @mixin media-breakpoint-up($width) {
