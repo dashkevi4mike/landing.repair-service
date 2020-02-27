@@ -1,0 +1,25 @@
+@import '~theme/variables.scss';
+
+.button {
+  padding: 1.08rem 2.75rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 2px;
+  font-size: 1rem;
+
+  &:hover {
+    border-color: $color-second-active;
+    background-color: $color-second-active;
+  }
+
+  &_theme_filled {
+    color: white;
+    border-color: $color-second;
+    background-color: $color-second;
+  }
+
+  &_theme_transparent {
+    color: white;
+    background-color: transparent;
+  }
+}

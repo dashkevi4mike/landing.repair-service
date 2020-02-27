@@ -1,5 +1,5 @@
 include ../menu/menu
-include ../requestCallButton/requestCallButton
+include ../button/button
 
 //-
   options.menuItems - массив елементов меню
@@ -15,4 +15,4 @@ mixin header(options)
       +menu({items: options.menuItems})
     a.header__phone(href='tel:' + options.tel)=options.tel
     .header__request-call
-      +requestCallButton(options)
+      +button({jsClass: 'js-request-call-button', text: 'request a call', theme: 'filled'})
