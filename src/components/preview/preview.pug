@@ -1,3 +1,5 @@
+include ../button/button
+
 mixin preview(options)
   if !options
     - options = {}
@@ -8,6 +10,12 @@ mixin preview(options)
     .preview__content-wrapper
       .preview__content
         .preview__content-inner
-          h1.preview__title Turnkey Repair in the <br> city of 
+          h1.preview__title
+            | Turnkey Repair in the <br> city of 
             span.preview__golden-title Rostov-on-Don
           p.preview__description Get ready-made turnkey repairs on time <br> with work time saving up to 45 days and 20% from <br> cost of materials due to the organization of work
+          .preview__buttons
+            .preview__button
+              +button({jsClass: 'js-request-call-button', text: 'calculate the cost', theme: 'filled'})
+            .preview__button
+              +button({jsClass: 'js-request-call-button', text: 'submit your application', theme: 'transparent'})

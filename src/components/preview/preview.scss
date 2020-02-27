@@ -49,9 +49,17 @@
   }
 
   &__description {
-    padding-top: 3rem;
+    margin: 3rem 0 4.16rem;
     color: white;
     font-size: 1.83rem;
     line-height: 1.2;
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__button {
+    margin-right: 1.66rem;
   }
 }
