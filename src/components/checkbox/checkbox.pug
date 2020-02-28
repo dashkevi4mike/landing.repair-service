@@ -1,0 +1,8 @@
+mixin checkbox(options)
+  if !options
+    - options = {}
+  .checkbox
+    label.checkbox__label(for=options.name)
+      input.checkbox__checkbox(type='checkbox', name=options.name, checked=options.checked, id=options.name, required=options.required)
+      span=options.label
+      span.checkbox__checkmark

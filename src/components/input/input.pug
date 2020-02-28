@@ -1,0 +1,9 @@
+mixin input(options)
+  if !options
+    - options = {}
+  - inputClass = `input__underline_error_${!!options.error}`
+  .input
+    label.input__label(for=options.name)=options.name
+    br
+    input.input__input(type=options.type, name=options.name, placeholder=options.placeholder, id=options.name, required=options.required)
+    .input__underline(class=inputClass)
