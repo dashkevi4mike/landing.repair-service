@@ -1,0 +1,68 @@
+@import '~theme/variables.scss';
+
+.checkbox {
+  position: relative;
+  display: block;
+  padding-left: 2.3rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &__label {
+    cursor: pointer;
+    color: white;
+    font-size: 1.33rem;
+    line-height: 1.2;
+  }
+
+  &__checkbox {
+    position: absolute;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+    opacity: 0;
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: $color-second;
+
+    &::after {
+      position: absolute;
+      display: none;
+      content: "";
+    }
+  }
+
+  &:hover &__checkbox ~ &__checkmark {
+    background-color: $color-second-active;
+  }
+
+  &__checkbox:checked ~ &__checkmark {
+    background-color: $color-second;
+  }
+
+  /* Show the checkmark when checked */
+  &__checkbox:checked ~ &__checkmark::after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  &__checkmark::after {
+    top: 0.1rem;
+    left: 0.4rem;
+    width: 0.416rem;
+    height: 0.83rem;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: solid white;
+    border-width: 0 2px 2px 0;
+  }
+}

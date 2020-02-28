@@ -2,4 +2,4 @@ mixin button(options)
   if !options
     - options = {}
   - elClass=`${options.jsClass} button_theme_${options.theme}`
-  button.button(class=elClass)=options.text
+  button.button(class=elClass, type=options.type)=options.text

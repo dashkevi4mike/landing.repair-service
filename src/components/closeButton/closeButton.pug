@@ -1,0 +1,5 @@
+mixin closeButton(options)
+  if !options
+    - options = {}
+  button.close-button(class=options.clickClass)
+    include ./imgs/x-circle.svg
