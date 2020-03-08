@@ -1,0 +1,17 @@
+include ../blockTitle/blockTitle
+include ../text/text
+include ../property/property
+
+mixin completedProject(project)
+
+  .completed-project
+    .completed-project__description
+      .completed-project__title
+        +blockTitle({text: 'Completed projects', theme: 'golden'})
+      .completed-project__note
+        +text({color: 'white', text: 'Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families'})
+      .completed-project__properties
+        each val in project.properties
+          .completed-project__property
+            +property(val)
+    .completed-project__preview

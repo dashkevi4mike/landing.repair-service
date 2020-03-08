@@ -1,0 +1,35 @@
+@import '~theme/variables.scss';
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+
+  &__tab-button {
+    cursor: pointer;
+    text-transform: uppercase;
+    opacity: 0.3;
+    color: white;
+    border: none;
+    background: none;
+    font-size: 1.16rem;
+    line-height: 1.38;
+
+    &:hover {
+      opacity: 1;
+      color: $color-second;
+    }
+  }
+
+  &__tab_active &__tab-underline {
+    background-color: $color-second;
+  }
+
+  &__tab_active &__tab-button {
+    opacity: 1;
+    color: $color-second;
+  }
+
+  &__tab-underline {
+    height: 1px;
+  }
+}

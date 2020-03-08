@@ -1,0 +1,6 @@
+mixin property(options)
+  if !options
+    - options = {}
+  .property
+    p.property__title=`${options.title}:`
+    p.property__subtitle=options.subtitle

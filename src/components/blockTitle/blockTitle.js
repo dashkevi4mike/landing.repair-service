@@ -1,0 +1,1 @@
+import './blockTitle.scss';
