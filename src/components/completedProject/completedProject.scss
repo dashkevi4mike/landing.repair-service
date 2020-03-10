@@ -2,4 +2,42 @@
 
 .completed-project {
   display: flex;
+
+  &__content {
+    display: flex;
+  }
+
+  &__title {
+    display: block;
+  }
+
+  &__note {
+    margin-top: 2.5rem;
+  }
+
+  &__description {
+    width: 36.8rem;
+    margin-right: 3.91rem;
+  }
+
+  &__properties {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4.58rem;
+    color: white;
+  }
+
+  &__property {
+    width: 50%;
+    margin-bottom: 4rem;
+    padding-right: 5%;
+  }
+
+  &__preview {
+    width: 56.58rem;
+  }
+
+  &__image {
+    height: 40.16rem;
+  }
 }

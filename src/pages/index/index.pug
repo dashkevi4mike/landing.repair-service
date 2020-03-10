@@ -3,6 +3,8 @@ include ../../components/preview/preview
 include ../../components/requestCallForm/requestCallForm
 include ../../components/completedProjects/completedProjects
 
+
+
 block variables
   -
     var data = { 
@@ -15,6 +17,11 @@ block variables
             {title: 'apartment area', subtitle: '81 m2'},
             {title: 'repair time', subtitle: '3.5 months'},
             {title: 'repair cost', subtitle: 'Upon request'}
+          ],
+          images: [
+            require('../../assets/imgs/slide1.png'),
+            require('../../assets/imgs/slide3.png'),
+            require('../../assets/imgs/slide4.png'),
           ]
         },
         {
@@ -25,6 +32,11 @@ block variables
             {title: 'apartment area', subtitle: '43 m2'},
             {title: 'repair time', subtitle: '2 months'},
             {title: 'repair cost', subtitle: 'Upon request'}
+          ],
+          images: [
+            require('../../assets/imgs/slide2.png'),
+            require('../../assets/imgs/slide3.png'),
+            require('../../assets/imgs/slide4.png'),
           ]
         },
         {
@@ -35,6 +47,11 @@ block variables
             {title: 'apartment area', subtitle: '61 m2'},
             {title: 'repair time', subtitle: '2.5 months'},
             {title: 'repair cost', subtitle: 'Upon request'}
+          ],
+          images: [
+            require('../../assets/imgs/slide1.png'),
+            require('../../assets/imgs/slide2.png'),
+            require('../../assets/imgs/slide4.png'),
           ]
         }
       ]

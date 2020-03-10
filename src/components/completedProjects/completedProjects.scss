@@ -4,45 +4,20 @@
   width: 100%;
   background-color: black;
 
-  &__inner {
+  &__tabs {
+    width: 51.91rem;
+    margin: 0 0 0 40.5rem;
+    padding: 8.33rem 0 3.66rem;
+  }
+
+  &__tabs-contents {
     display: flex;
+  }
+
+  &__inner {
     width: 100%;
     max-width: 100rem;
     margin: 0 auto;
-    padding-top: 8.33rem;
-  }
-
-  &__content {
-    display: flex;
-  }
-
-  &__title {
-    display: block;
-  }
-
-  &__note {
-    margin-top: 2.5rem;
-  }
-
-  &__description {
-    width: 36.8rem;
-    padding-top: 5.42rem;
-  }
-
-  &__properties {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 4.58rem;
-    color: white;
-  }
-
-  &__property {
-    width: 50%;
-    margin-bottom: 4rem;
-    padding-right: 10%;
-  }
-
-  &__preview {
-    width: 51.916rem;
+    padding-bottom: 3.75rem;
   }
 }

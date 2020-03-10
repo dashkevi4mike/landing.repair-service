@@ -15,3 +15,5 @@ mixin completedProject(project)
           .completed-project__property
             +property(val)
     .completed-project__preview
+      each image in project.images
+        img.completed-project__image(src=image)
