@@ -1,6 +1,7 @@
 @import '~theme/variables.scss';
 
 .completed-projects {
+  position: relative;
   width: 100%;
   background-color: black;
 
@@ -18,6 +19,22 @@
     width: 100%;
     max-width: 100rem;
     margin: 0 auto;
-    padding-bottom: 3.75rem;
+    padding-bottom: 34.58rem;
+  }
+
+  &__background-city {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: bottom repeat-x url(./imgs/Frame.png);
+  }
+
+  &__background-lines {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: url(./imgs/BACKGROUND-LINE.png);
   }
 }

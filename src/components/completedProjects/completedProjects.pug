@@ -6,6 +6,8 @@ mixin completedProjects(projects)
     var defaultActiveTabIndex = 0
     var tabsList = projects.map(project => project.title)
   section.completed-projects
+    .completed-projects__background-lines
+    .completed-projects__background-city
     .completed-projects__inner
       .completed-projects__tabs
         +tabs('completed-projects', tabsList, defaultActiveTabIndex)
