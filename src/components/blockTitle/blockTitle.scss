@@ -1,0 +1,12 @@
+@import '~theme/variables.scss';
+
+.block-title {
+  display: block;
+  text-transform: uppercase;
+
+  &_theme_golden {
+    color: $color-second;
+    font-size: 2.25rem;
+    line-height: 1.38;
+  }
+}

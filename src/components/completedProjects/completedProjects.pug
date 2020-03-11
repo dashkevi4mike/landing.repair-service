@@ -1,0 +1,15 @@
+include ../completedProject/completedProject
+include ../tabs/tabs
+
+mixin completedProjects(projects)
+  -
+    var defaultActiveTabIndex = 0
+    var tabsList = projects.map(project => project.title)
+  section.completed-projects
+    .completed-projects__inner
+      .completed-projects__tabs
+        +tabs('completed-projects', tabsList, defaultActiveTabIndex)
+      .completed-projects__tabs-contents
+        each project, index in projects
+          +tabContent('completed-projects', index, index === defaultActiveTabIndex)
+            +completedProject(project)

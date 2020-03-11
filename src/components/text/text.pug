@@ -1,0 +1,5 @@
+mixin text(options)
+  if !options
+    - options = {}
+  - elClass=`text_color_${options.color}`
+  p.text(class=elClass, type=options.type)=options.text

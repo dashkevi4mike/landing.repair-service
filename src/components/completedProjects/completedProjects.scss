@@ -1,0 +1,23 @@
+@import '~theme/variables.scss';
+
+.completed-projects {
+  width: 100%;
+  background-color: black;
+
+  &__tabs {
+    width: 51.91rem;
+    margin: 0 0 0 40.5rem;
+    padding: 8.33rem 0 3.66rem;
+  }
+
+  &__tabs-contents {
+    display: flex;
+  }
+
+  &__inner {
+    width: 100%;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding-bottom: 3.75rem;
+  }
+}

@@ -1,0 +1,12 @@
+mixin tabs(scope, tabsList, activeTabIndex)
+  .tabs.js-tabs
+    each tabName, index in tabsList
+      -
+        var tabMClass = `tabs__tab_${index === activeTabIndex ? 'active' : 'inactive'}`
+      .tabs__tab(class=`${tabMClass} js-tab`, data-scope=scope, data-tab-index=index)
+        button.tabs__tab-button=tabName
+        .tabs__tab-underline
+
+mixin tabContent(scope, index, isActive)
+  .tabs__tab-content(class=`js-tab-content`, hidden=!isActive, data-scope=scope, data-tab-index=index)
+    block
