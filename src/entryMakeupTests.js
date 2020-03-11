@@ -1,6 +1,7 @@
 import 'normalize.css';
 import './theme/global.scss';
 
+
 import 'script-loader?window=>global!makeup';
 import 'makeup/dist/makeup.css';
 

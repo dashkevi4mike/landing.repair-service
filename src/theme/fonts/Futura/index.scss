@@ -1,0 +1,5 @@
+@import '../fontFace';
+
+@include font-face(FuturaMediumC, FuturaMediumC, 400, null, woff ttf);
+@include font-face(FuturaDemiC, FuturaDemiC, 400, null, woff ttf);
+@include font-face(FuturaBookC, FuturaBookC, 400, null, woff ttf);
