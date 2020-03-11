@@ -8,6 +8,7 @@
 }
 
 html {
+  font-family: 'FuturaBookC', sans-serif;
   font-size: 8px;
 
   @include media-breakpoint-up($xxs) {
@@ -28,4 +29,12 @@ h1,
 h2 {
   margin: 0;
   padding: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'FuturaDemiC', sans-serif;
 }

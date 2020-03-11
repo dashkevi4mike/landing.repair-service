@@ -4,6 +4,7 @@
   display: flex;
   flex: 1 0 auto;
   padding: 1rem 2rem 1rem 0;
+  font-family: 'FuturaBookC', sans-serif;
   align-items: center;
 
   @include media-breakpoint-down($md) {
@@ -15,7 +16,7 @@
     text-decoration: none;
     text-transform: uppercase;
     color: $color-second;
-    font-family: sans-serif;
+    font-family: 'FuturaDemiC', sans-serif;
     font-size: 1.16rem;
   }
 
@@ -32,7 +33,6 @@
     text-transform: uppercase;
     color: $color-second;
     background-color: $color-first;
-    font-family: sans-serif;
     font-size: 1.16rem;
 
     &:hover {
