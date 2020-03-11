@@ -14,6 +14,6 @@ mixin completedProject(project)
         each val in project.properties
           .completed-project__property
             +property(val)
-    .completed-project__preview
+    .completed-project__preview.js-completed-project__preview
       each image in project.images
         img.completed-project__image(src=image)

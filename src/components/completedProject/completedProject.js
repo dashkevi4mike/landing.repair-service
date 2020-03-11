@@ -6,9 +6,8 @@ import './completedProject.scss';
 
 class CompletedProject {
     constructor() {
-        $('.completed-project__preview').slick({
+        $('.js-completed-project__preview').slick({
             speed: 300,
-            slidesToShow: 2,
             centerMode: false,
             variableWidth: true
         });

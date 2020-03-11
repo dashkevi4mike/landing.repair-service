@@ -40,4 +40,48 @@
   &__image {
     height: 40.16rem;
   }
+
+  .slick-prev.slick-arrow,
+  .slick-next.slick-arrow {
+    width: 3.56rem;
+    height: 3.56rem;
+    border-radius: 50%;
+    background-color: $color-second;
+
+    /* doiuse-disable */
+    filter: drop-shadow(0 0 2px $color-second);
+  }
+
+  .slick-prev.slick-arrow {
+    z-index: 1;
+    left: 3.16rem;
+
+    &::before {
+      position: absolute;
+      top: -1.66rem;
+      right: 1.08rem;
+      content: '\2039';
+      font-size: 5rem;
+      font-weight: bold;
+    }
+  }
+
+  .slick-next.slick-arrow {
+    z-index: 1;
+    right: 3.16rem;
+
+    &::before {
+      position: absolute;
+      top: -1.66rem;
+      left: 1.08rem;
+      content: '\203a';
+      font-size: 5rem;
+      font-weight: bold;
+    }
+  }
+
+  .slick-next.slick-arrow {
+    z-index: 1;
+    right: 4.16rem;
+  }
 }
