@@ -1,0 +1,12 @@
+mixin sectionTitle(options)
+  if !options
+    - options = {}
+  - var elClass=`section-title__text_theme_${options.theme}`
+  
+  .section-title
+    h2.section-title__text(class=elClass)=options.text
+    if options.icon
+      .section-title__label
+        span.section-title__line
+        img.section-title__image(src=require(`components/sectionTitle/imgs/${options.icon}.svg`))
+        span.section-title__line

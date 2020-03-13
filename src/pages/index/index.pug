@@ -2,7 +2,7 @@ extends ../base/base
 include ../../components/preview/preview
 include ../../components/requestCallForm/requestCallForm
 include ../../components/completedProjects/completedProjects
-
+include ../../components/onlineControl/onlineControl
 
 
 block variables
@@ -19,9 +19,9 @@ block variables
             {title: 'repair cost', subtitle: 'Upon request'}
           ],
           images: [
-            require('../../assets/imgs/slide1.png'),
-            require('../../assets/imgs/slide3.png'),
-            require('../../assets/imgs/slide4.png'),
+            require('./imgs/slide1.png'),
+            require('./imgs/slide3.png'),
+            require('./imgs/slide4.png'),
           ]
         },
         {
@@ -34,9 +34,9 @@ block variables
             {title: 'repair cost', subtitle: 'Upon request'}
           ],
           images: [
-            require('../../assets/imgs/slide2.png'),
-            require('../../assets/imgs/slide3.png'),
-            require('../../assets/imgs/slide4.png'),
+            require('./imgs/slide2.png'),
+            require('./imgs/slide3.png'),
+            require('./imgs/slide4.png'),
           ]
         },
         {
@@ -49,9 +49,9 @@ block variables
             {title: 'repair cost', subtitle: 'Upon request'}
           ],
           images: [
-            require('../../assets/imgs/slide1.png'),
-            require('../../assets/imgs/slide2.png'),
-            require('../../assets/imgs/slide4.png'),
+            require('./imgs/slide1.png'),
+            require('./imgs/slide2.png'),
+            require('./imgs/slide4.png'),
           ]
         }
       ]
@@ -61,6 +61,14 @@ block title
   | Repair design project
 
 block main
-  +preview()
-  +requestCallForm()
-  +completedProjects(data.projects)
+  .index
+    +preview()
+    +requestCallForm()
+    .index__completed-projects
+      .index__background.index__background_color_black
+      .index__background-lines.index__background-lines_color_white
+      .index__background-city
+      +completedProjects(data.projects)
+    .index__online-control
+      .index__background-lines.index__background-lines_color_black
+      +onlineControl()

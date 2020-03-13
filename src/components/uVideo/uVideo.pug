@@ -1,0 +1,8 @@
+mixin uVideo(videoSrc, coverSrc)
+  .u-video.js-u-video
+    .u-video__overlay.js-u-video__overlay(hidden=false)
+      .u-video__cover(style=`background-image: url(${coverSrc});`)
+      .u-video__shadow
+      .u-video__inner
+        button.js-u-video__play.u-video__play
+    iframe.js-u-video__video.u-video__video(data-src=videoSrc, width='100%', height='100%', allow='autoplay')

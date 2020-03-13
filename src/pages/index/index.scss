@@ -1,0 +1,45 @@
+.index {
+  width: 100%;
+
+  &__online-control {
+    position: relative;
+    width: 100%;
+    margin-top: -27.16rem;
+  }
+
+  &__background_color_black {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+  }
+
+  &__background-lines {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  &__background-lines_color_white {
+    background: url(./imgs/BACKGROUND-LINE-WHITE.svg);
+  }
+
+  &__background-lines_color_black {
+    background: url(./imgs/BACKGROUND-LINE-BLACK.svg);
+  }
+
+  &__completed-projects {
+    position: relative;
+    width: 100%;
+  }
+
+  &__background-city {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: bottom repeat-x url(./imgs/Frame.png);
+  }
+}

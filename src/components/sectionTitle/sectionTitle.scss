@@ -1,0 +1,43 @@
+@import '~theme/variables.scss';
+
+.section-title {
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+
+  &__text {
+    text-transform: uppercase;
+    font-family: 'YesevaOne', serif;
+  }
+
+  &__text_theme_golden {
+    color: $color-second;
+    font-size: 2.25rem;
+    line-height: 1.38;
+  }
+
+  &__text_theme_white {
+    text-align: center;
+    color: white;
+    font-size: 1.66rem;
+    line-height: 1.38;
+  }
+
+  &__label {
+    display: flex;
+    margin: 1.66rem 0 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    margin: 0 0.83rem;
+  }
+
+  &__line {
+    display: inline-block;
+    width: 2.66rem;
+    height: 1.5px;
+    background-color: $color-second;
+  }
+}
