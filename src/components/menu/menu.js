@@ -14,7 +14,7 @@ class Menu {
 }
 
 $(() => {
-  $('.js-menu').each((index, node) => {
+  $('.js-menu').each((_, node) => {
     new Menu($(node));
   });
 });

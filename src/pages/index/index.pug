@@ -64,6 +64,11 @@ block main
   .index
     +preview()
     +requestCallForm()
-    +completedProjects(data.projects)
+    .index__completed-projects
+      .index__background.index__background_color_black
+      .index__background-lines.index__background-lines_color_white
+      .index__background-city
+      +completedProjects(data.projects)
     .index__online-control
+      .index__background-lines.index__background-lines_color_black
       +onlineControl()

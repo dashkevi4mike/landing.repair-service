@@ -1,8 +1,62 @@
+@import '~theme/variables.scss';
+
 .u-video {
+  position: relative;
   width: 100%;
   height: 100%;
 
   &__video {
     border: none;
+  }
+
+  &__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+
+  &__shadow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-color: black;
+  }
+
+  &__play {
+    width: 7.08rem;
+    height: 7.08rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: $color-second;
+
+    /* doiuse-disable */
+    filter: drop-shadow(0 0 2px $color-second);
+
+    &::before {
+      position: absolute;
+      top: 2.2rem;
+      right: 1.6rem;
+      content: '\25B6';
+      color: white;
+      font-size: 3.5rem;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
   }
 }

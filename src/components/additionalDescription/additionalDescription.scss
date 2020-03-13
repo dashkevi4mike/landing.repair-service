@@ -1,0 +1,18 @@
+@import '~theme/variables.scss';
+
+.additional-description {
+  &__short-line {
+    width: 4.58rem;
+    height: 2px;
+    margin: 0 auto 3rem;
+    background-color: $color-second;
+  }
+
+  &__text {
+    width: 100%;
+    margin-bottom: 8.83rem;
+    text-align: center;
+    font-size: 1.66rem;
+    line-height: 1.5;
+  }
+}
