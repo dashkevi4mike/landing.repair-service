@@ -18,6 +18,10 @@
     color: $color-second;
     font-family: 'FuturaDemiC', sans-serif;
     font-size: 1.16rem;
+
+    @include media-breakpoint-between($md, $lg) {
+      margin-left: 2rem;
+    }
   }
 
   .header__menu {
