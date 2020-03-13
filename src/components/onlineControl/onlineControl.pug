@@ -1,0 +1,10 @@
+include ../sectionTitle/sectionTitle
+include ../uVideo/uVideo
+
+mixin onlineControl()
+  section.online-control
+    .online-control__inner
+      .online-control__title
+        +sectionTitle({text: 'Online control', theme: 'white', icon: 'camera'})
+      .online-control__video
+        +uVideo('https://www.youtube.com/embed/FJoNWPzSF6w')

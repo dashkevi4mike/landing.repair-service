@@ -1,0 +1,19 @@
+.online-control {
+  width: 100%;
+
+  &__inner {
+    width: 100%;
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 2.58rem;
+  }
+
+  &__video {
+    width: 68%;
+    height: 36.16rem;
+    margin: 0 auto;
+  }
+}
