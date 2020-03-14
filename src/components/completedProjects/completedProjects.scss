@@ -5,9 +5,17 @@
   width: 100%;
 
   &__tabs {
-    width: 51.91rem;
-    margin: 0 0 0 40.5rem;
+    width: 51.91%;
+    margin: 0 0 0 40.5%;
     padding: 8.33rem 0 3.66rem;
+
+    @include media-breakpoint-down($lg) {
+      width: 48.58rem;
+    }
+
+    @include media-breakpoint-down($md) {
+      display: none;
+    }
   }
 
   &__tabs-contents {

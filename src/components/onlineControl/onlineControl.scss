@@ -1,3 +1,5 @@
+@import '~theme/variables.scss';
+
 .online-control {
   width: 100%;
 
@@ -15,6 +17,10 @@
     width: 68%;
     height: 36.16rem;
     margin: 0 auto 5.25rem;
+
+    @include media-breakpoint-down($md) {
+      height: 26.16rem;
+    }
   }
 
   &__description {
