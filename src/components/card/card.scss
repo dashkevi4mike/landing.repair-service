@@ -1,0 +1,45 @@
+@import '~theme/variables.scss';
+
+.card {
+  &__image {
+    width: 32.66rem;
+    height: 35.08rem;
+  }
+
+  &__description {
+    position: relative;
+    margin: -10.66rem 2.58rem 0;
+    padding: 2.33rem;
+    background-color: white;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  &__title {
+    margin-bottom: 0.8rem;
+    font-family: 'YesevaOne', serif;
+    font-size: 1.5rem;
+    line-height: 1.38;
+  }
+
+  &__options {
+    margin-bottom: 3.08rem;
+    margin-left: 1rem;
+    color: #959595;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  &__label {
+    position: relative;
+    top: -2rem;
+    display: inline-block;
+    margin-left: 2.585rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: $color-second;
+    font-family: 'YesevaOne', serif;
+    font-size: 1.5rem;
+    line-height: 1.38;
+  }
+}
