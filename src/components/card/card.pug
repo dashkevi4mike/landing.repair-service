@@ -1,0 +1,9 @@
+mixin card(title, image, labelText, options)
+  .card
+    img.card__image(src=image, alt=title)
+    .card__description
+      h3.card__title=title
+      ul.card__options
+        each option in options
+          li.card__option=option
+    .card__label=labelText

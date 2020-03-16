@@ -3,6 +3,7 @@ include ../../components/preview/preview
 include ../../components/requestCallForm/requestCallForm
 include ../../components/completedProjects/completedProjects
 include ../../components/onlineControl/onlineControl
+include ../../components/typesOfRepair/typesOfRepair
 
 
 block variables
@@ -54,6 +55,26 @@ block variables
             require('./imgs/slide4.png'),
           ]
         }
+      ],
+      typesOfRepair: [
+        {
+          image: require('./imgs/type1.png'),
+          title: 'Redecorating',
+          minCostPerMeter: 900,
+          options: [ 'Dismantling of old coatings', 'Wallpapering', 'Painting walls and ceilings', 'Laying flooring', 'Replacing plumbing', 'Replacing sockets and switches', 'Replacing doors']
+        },
+        {
+          image: require('./imgs/type2.png'),
+          title: 'Overhaul',
+          minCostPerMeter: 1800,
+          options: [ 'Dismantling of old coatings', 'Wallpapering', 'Painting walls and ceilings', 'Laying flooring', 'Replacing plumbing', 'Replacing sockets and switches', 'Replacing doors']
+        },
+        {
+          image: require('./imgs/type3.png'),
+          title: 'Designer Repair',
+          minCostPerMeter: 4000,
+          options: [ 'Dismantling of old coatings', 'Wallpapering', 'Painting walls and ceilings', 'Laying flooring', 'Replacing plumbing', 'Replacing sockets and switches', 'Replacing doors']
+        }
       ]
     }
 
@@ -72,3 +93,4 @@ block main
     .index__online-control
       .index__background-lines.index__background-lines_color_black
       +onlineControl()
+      +typesOfRepair(data.typesOfRepair)

@@ -1,0 +1,11 @@
+include ../sectionTitle/sectionTitle
+include ../card/card
+
+mixin typesOfRepair(types)
+  section.types-of-repair
+    .types-of-repair__inner
+      .types-of-repair__title
+        +sectionTitle({text: 'Types of repair', theme: 'black', icon: 'measures'})
+      .types-of-repair__cards
+        each repairType in types
+          +card(repairType.title, repairType.image, `from ${repairType.minCostPerMeter} rub / m2`, repairType.options)
