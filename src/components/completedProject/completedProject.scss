@@ -3,21 +3,40 @@
 .completed-project {
   display: flex;
 
-  &__content {
-    display: flex;
+  @include media-breakpoint-down($md) {
+    display: block;
   }
 
   &__title {
     display: block;
+
+    @include media-breakpoint-down($md) {
+      text-align: center;
+    }
   }
 
   &__note {
     margin-top: 2.5rem;
+
+    @include media-breakpoint-down($md) {
+      text-align: center;
+    }
   }
 
   &__description {
-    width: 36.8rem;
-    margin-right: 3.91rem;
+    width: 36.8%;
+    margin-right: 3.91%;
+
+    @include media-breakpoint-down($lg) {
+      /* doiuse-disable */
+      width: calc(36.8% - 2rem);
+      margin-left: 2rem;
+    }
+
+    @include media-breakpoint-down($md) {
+      width: 80%;
+      margin: 3rem auto 0;
+    }
   }
 
   &__properties {
@@ -35,6 +54,20 @@
 
   &__preview {
     width: 56.58rem;
+
+    @include media-breakpoint-down($lg) {
+      width: 48.58rem;
+    }
+
+    @include media-breakpoint-down($md) {
+      width: 46.58rem;
+      margin: 0 auto;
+    }
+
+    @include media-breakpoint-down($xs) {
+      width: 36.58rem;
+      margin: 0 auto;
+    }
   }
 
   &__image {
