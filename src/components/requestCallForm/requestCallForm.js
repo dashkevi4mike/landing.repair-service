@@ -9,18 +9,12 @@ class RequestCallForm {
 
   _attachEventHandler() {
     const _this = this;
-    $('.js-request-call-button').on('click', () => {
-      _this.$component.length > 0 && _this.$component[0].removeAttribute('hidden');
-    });
-  
-    $('.js-close-request-call-form').on('click', () => {
-      _this.$component.length > 0 && _this.$component[0].setAttribute('hidden', true);
-    });
+    console.log(_this);
   }
 }
 
 $(() => {
-  $('.js-request-call-form').each((_, node) => {
+  $('.js-request-form').each((_, node) => {
     new RequestCallForm($(node));
   });
 });

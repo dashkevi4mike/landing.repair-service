@@ -15,4 +15,4 @@ mixin header(options)
       +menu({items: options.menuItems})
     a.header__phone(href='tel:' + options.tel)=options.tel
     .header__request-call
-      +button({jsClass: 'js-request-call-button', text: 'request a call', theme: 'filled'})
+      +button({'data-attr': 'request-call', text: 'request a call', theme: 'filled'})

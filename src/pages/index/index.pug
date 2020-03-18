@@ -1,5 +1,6 @@
 extends ../base/base
 include ../../components/preview/preview
+include ../../components/modal/modal
 include ../../components/requestCallForm/requestCallForm
 include ../../components/completedProjects/completedProjects
 include ../../components/onlineControl/onlineControl
@@ -85,7 +86,8 @@ block title
 block main
   .index
     +preview()
-    +requestCallForm()
+    +modal('request-call')
+      +requestCallForm()
     .index__completed-projects
       .index__background.index__background_color_black
       .index__background-lines.index__background-lines_color_white
