@@ -1,3 +1,5 @@
+include ../requestCallForm/requestCallForm
+
 mixin aboutMeasurement()
   - 
     var steps = [
@@ -15,3 +17,4 @@ mixin aboutMeasurement()
               .about-measurement__bullet=(`0${index+1}`)
               p.about-measurement__point-text=step
       .about-measurement__form
+        +requestCallForm()

@@ -9,14 +9,15 @@
     max-width: 100rem;
     height: 100%;
     margin: 10rem auto 0;
+    background-image: url(./imgs/background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: space-between;
   }
 
   &__scheme {
     width: 50%;
     height: 100%;
-    background-image: url(./imgs/background.png);
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
   &__points {
@@ -54,5 +55,12 @@
     line-height: 1.38rem;
     justify-content: center;
     align-items: center;
+  }
+
+  &__form {
+    width: 40%;
+    margin-top: 5.83rem;
+    padding: 2.6rem;
+    background-color: black;
   }
 }
