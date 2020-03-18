@@ -4,6 +4,7 @@ include ../../components/requestCallForm/requestCallForm
 include ../../components/completedProjects/completedProjects
 include ../../components/onlineControl/onlineControl
 include ../../components/typesOfRepair/typesOfRepair
+include ../../components/aboutMeasurement/aboutMeasurement
 
 
 block variables
@@ -94,3 +95,4 @@ block main
       .index__background-lines.index__background-lines_color_black
       +onlineControl()
       +typesOfRepair(data.typesOfRepair)
+      +aboutMeasurement()

@@ -1,0 +1,17 @@
+mixin aboutMeasurement()
+  - 
+    var steps = [
+      'Our specialist will arrive for measurements per day contact, or appoint a date convenient for you',
+      'Free metering',
+      'Free consultation',
+      'Get a cost estimate and the timing of your future repairs'
+    ]
+  .about-measurement
+    .about-measurement__inner
+      .about-measurement__scheme
+        ul.about-measurement__points
+          each step, index in steps
+            li.about-measurement__point
+              .about-measurement__bullet=(`0${index+1}`)
+              p.about-measurement__point-text=step
+      .about-measurement__form
