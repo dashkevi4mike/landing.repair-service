@@ -1,2 +1,17 @@
-mixin galery()
+include ../sectionTitle/sectionTitle
+include ../tabs/tabs
+
+mixin gallery(styles)
+  - 
+    var defaultActiveTabIndex = 0
+    var tabsList = styles.map(style => style.title)
+
   .gallery
+    .gallery__background
+    .gallery__shadow
+    .gallery__inner
+      .gallery__navigation
+        .gallery__header
+          +sectionTitle({text: 'We realize your wildest fantasies', theme: 'golden'})
+        .gallery__tabs
+          +tabs('completed-projects', tabsList, defaultActiveTabIndex, 'vertical')
