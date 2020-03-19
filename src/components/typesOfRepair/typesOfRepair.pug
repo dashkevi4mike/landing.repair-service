@@ -8,4 +8,5 @@ mixin typesOfRepair(types)
         +sectionTitle({text: 'Types of repair', theme: 'black', icon: 'measures'})
       .types-of-repair__cards
         each repairType in types
-          +card(repairType.title, repairType.image, `from ${repairType.minCostPerMeter} rub / m2`, repairType.options)
+          .types-of-repair__card
+            +card(repairType.title, repairType.image, `from ${repairType.minCostPerMeter} rub / m2`, repairType.options)

@@ -5,24 +5,24 @@
 
   &__inner {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 100rem;
     height: 100%;
-    margin: 10rem auto 0;
-    background-image: url(./imgs/background.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    justify-content: space-between;
+    margin: 0 auto;
   }
 
   &__scheme {
-    width: 50%;
+    width: 55%;
     height: 100%;
+    background-image: url(./imgs/background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   &__points {
-    width: 75%;
-    margin: 0 0 5.83rem auto;
+    width: 65%;
+    margin: 0 auto 10.83rem;
     list-style: none;
   }
 
@@ -32,6 +32,10 @@
     margin-top: 5.83rem;
     font-size: 1.5rem;
     align-items: center;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   &__point-text {
@@ -45,6 +49,7 @@
 
   &__bullet {
     display: flex;
+    flex-shrink: 0;
     width: 3.48rem;
     height: 3.48rem;
     margin-right: 1.66rem;
@@ -59,8 +64,7 @@
 
   &__form {
     width: 40%;
-    margin-top: 5.83rem;
-    padding: 2.6rem;
+    padding: 2.6%;
     background-color: black;
   }
 }

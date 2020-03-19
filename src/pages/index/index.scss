@@ -1,3 +1,5 @@
+@import '~theme/variables.scss';
+
 .index {
   width: 100%;
 
@@ -42,5 +44,13 @@
     bottom: 0;
     width: 100%;
     background: bottom repeat-x url(./imgs/Frame.png);
+  }
+
+  &__about-measurement {
+    margin: 8.75rem 0 9.75rem;
+
+    @include media-breakpoint-down($md) {
+      display: none;
+    }
   }
 }
