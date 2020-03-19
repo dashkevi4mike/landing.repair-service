@@ -1,0 +1,11 @@
+include ../closeButton/closeButton
+
+mixin modal(identifier)
+  .modal.js-modal(hidden=true, data-modal=identifier)
+    .modal__shadow
+    .modal__content-wrapper
+      .modal__content
+        .modal__content-inner
+          .modal__close-button
+            +closeButton({ clickClass: 'js-close-modal'})
+          block

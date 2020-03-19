@@ -1,7 +1,7 @@
-import './requestCallForm.scss';
+import './requestMeasurementForm.scss';
 import $ from 'jquery';
 
-class RequestCallForm {
+class RequestMeasurementForm {
   constructor($component) {
     this.$component = $component;
     this._attachEventHandler();
@@ -14,7 +14,7 @@ class RequestCallForm {
 }
 
 $(() => {
-  $('.js-request-call-form').each((_, node) => {
-    new RequestCallForm($(node));
+  $('.js-request-measurement-form').each((_, node) => {
+    new RequestMeasurementForm($(node));
   });
 });

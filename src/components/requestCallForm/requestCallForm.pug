@@ -1,29 +1,22 @@
 include ../input/input
-include ../closeButton/closeButton
 include ../checkbox/checkbox
 include ../button/button
 
 mixin requestCallForm(options)
   if !options
     - options = {}
+  - formName = 'request-call-form'
 
-  .request-call-form.js-request-call-form(hidden=true)
-    .request-call-form__shadow
-    .request-call-form__content-wrapper
-      .request-call-form__content
-        .request-call-form__content-inner
-          .request-call-form__close-button
-            +closeButton({ clickClass: 'js-close-request-call-form'})
-          form.request-call-form__form
-            h2.request-call-form__title
-              | Leave a request and our manager will contact you shortly
-            .request-call-form__input
-              +input({ type: 'text', name: 'name', placeholder: 'What is your name:', error: '', required: true, error: 'ff' })
-            .request-call-form__input
-              +input({ type: 'tel', name: 'number', placeholder: 'Your phone number:', error: '', required: true })
-            .request-call-form__input
-              +input({ type: 'email', name: 'email', placeholder: 'Your email:', error: '', required: true })
-            .request-call-form__agreement
-              +checkbox({ name: 'privacy-agreement', required: true, label: 'I agree to the processing of personal data', checked: false, required: true })
-            .request-call-form__submit-button
-              +button({ text: 'submit', type: 'submit', theme: 'filled'})
+  form.request-call-form__form
+    h2.request-call-form__title
+      | Leave a request and our manager will contact you shortly
+    .request-call-form__input
+      +input({ id: `${formName}__name`, type: 'text', name: 'name', placeholder: 'What is your name:', error: '', required: true, error: 'ff' })
+    .request-call-form__input
+      +input({ id: `${formName}__number`, type: 'tel', name: 'number', placeholder: 'Your phone number:', error: '', required: true })
+    .request-call-form__input
+      +input({ id: `${formName}__email`, type: 'email', name: 'email', placeholder: 'Your email:', error: '', required: true })
+    .request-call-form__agreement
+      +checkbox({ id: `${formName}__privacy-agreement`, name: 'privacy-agreement', required: true, label: 'I agree to the processing of personal data', checked: false, required: true })
+    .request-call-form__submit-button
+      +button({ text: 'submit', type: 'submit', theme: 'filled'})

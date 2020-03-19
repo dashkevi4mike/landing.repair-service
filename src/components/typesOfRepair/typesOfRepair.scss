@@ -15,6 +15,12 @@
 
   &__cards {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__card {
+    width: 30rem;
+    margin: 0 1rem 2rem;
   }
 }

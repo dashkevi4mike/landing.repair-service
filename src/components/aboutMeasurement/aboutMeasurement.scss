@@ -1,0 +1,70 @@
+@import '~theme/variables.scss';
+
+.about-measurement {
+  width: 100%;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100rem;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  &__scheme {
+    width: 55%;
+    height: 100%;
+    background-image: url(./imgs/background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__points {
+    width: 65%;
+    margin: 0 auto 10.83rem;
+    list-style: none;
+  }
+
+  &__point {
+    display: flex;
+    width: 100%;
+    margin-top: 5.83rem;
+    font-size: 1.5rem;
+    align-items: center;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__point-text {
+    display: flex;
+    width: 90%;
+    color: #363636;
+    font-family: 'FuturaMediumC';
+    line-height: 2rem;
+    align-items: center;
+  }
+
+  &__bullet {
+    display: flex;
+    flex-shrink: 0;
+    width: 3.48rem;
+    height: 3.48rem;
+    margin-right: 1.66rem;
+    color: white;
+    border-radius: 50%;
+    background-color: $color-second;
+    font-family: 'YesevaOne', serif;
+    line-height: 1.38rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__form {
+    width: 40%;
+    padding: 2.6%;
+    background-color: black;
+  }
+}
