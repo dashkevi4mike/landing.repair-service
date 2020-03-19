@@ -6,6 +6,7 @@ include ../../components/completedProjects/completedProjects
 include ../../components/onlineControl/onlineControl
 include ../../components/typesOfRepair/typesOfRepair
 include ../../components/aboutMeasurement/aboutMeasurement
+include ../../components/gallery/gallery
 
 
 block variables
@@ -99,3 +100,5 @@ block main
       +typesOfRepair(data.typesOfRepair)
     .index__about-measurement  
       +aboutMeasurement()
+    .index__gallery 
+      +gallery()
