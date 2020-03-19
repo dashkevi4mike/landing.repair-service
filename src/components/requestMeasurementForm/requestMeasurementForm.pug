@@ -1,0 +1,22 @@
+include ../input/input
+include ../checkbox/checkbox
+include ../button/button
+
+mixin requestMeasurementForm(options)
+  if !options
+    - options = {}
+  - formName = 'request-measurement-form'
+
+  form.request-measurement-form__form
+    h2.request-measurement-form__title
+      | Leave a request for free departure of the measurer
+    .request-measurement-form__input
+      +input({ id: `${formName}__name`, formtype: 'text', name: 'name', placeholder: 'What is your name:', error: '', required: true, error: 'ff' })
+    .request-measurement-form__input
+      +input({ id: `${formName}__number`, type: 'tel', name: 'number', placeholder: 'Your phone number:', error: '', required: true })
+    .request-measurement-form__input
+      +input({ id: `${formName}__email`, type: 'email', name: 'email', placeholder: 'Your email:', error: '', required: true })
+    .request-measurement-form__agreement
+      +checkbox({ id: `${formName}__privacy-agreement`, name: 'privacy-agreement', required: true, label: 'I agree to the processing of personal data', checked: false, required: true })
+    .request-measurement-form__submit-button
+      +button({ text: 'Call the measurer', type: 'submit', theme: 'filled'})
