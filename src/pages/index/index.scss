@@ -55,7 +55,7 @@
   }
 
   &__gallery {
-    margin: 20.25rem 0;
+    margin: 20.25rem 0 12.5rem;
 
     @include media-breakpoint-down($md) {
       display: none;

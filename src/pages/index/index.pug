@@ -7,6 +7,7 @@ include ../../components/onlineControl/onlineControl
 include ../../components/typesOfRepair/typesOfRepair
 include ../../components/aboutMeasurement/aboutMeasurement
 include ../../components/gallery/gallery
+include ../../components/designProjects/designProjects
 
 
 block variables
@@ -179,6 +180,26 @@ block variables
             require('./imgs/style4.png'),
           ]
         }
+      ],
+      designProjects: [
+        {
+          image: require('./imgs/type1.png'),
+          title: 'Mini',
+          costPerMeter: 150,
+          options: [ 'Measurement drawing', 'Redevelopment', 'Layout of furniture', 'Plumbing plan. equipment']
+        },
+        {
+          image: require('./imgs/type2.png'),
+          title: 'Standard',
+          costPerMeter: 400,
+          options: [ 'Measurement drawing', 'Redevelopment', 'Layout of furniture', 'Plan of ceilings', 'Floor Plan', 'Electricians plan', 'Lighting plan']
+        },
+        {
+          image: require('./imgs/type3.png'),
+          title: 'Full',
+          costPerMeter: 900,
+          options: [ 'Dismantling of old coatings', 'Wallpapering', 'Painting walls and ceilings', 'Laying flooring', 'Replacing plumbing', 'Replacing sockets and switches', 'Replacing doors', 'Wall reamers', '3D visualization', 'Bill of materials', 'Departure for a selection of materials', 'Furniture selection']
+        }
       ]
     }
 
@@ -203,3 +224,5 @@ block main
       +aboutMeasurement()
     .index__gallery 
       +gallery(data.styles)
+    .index__design-projects
+      +designProjects(data.designProjects)
