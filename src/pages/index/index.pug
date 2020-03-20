@@ -8,6 +8,7 @@ include ../../components/typesOfRepair/typesOfRepair
 include ../../components/aboutMeasurement/aboutMeasurement
 include ../../components/gallery/gallery
 include ../../components/designProjects/designProjects
+include ../../components/workflow/workflow
 
 
 block variables
@@ -225,4 +226,9 @@ block main
     .index__gallery 
       +gallery(data.styles)
     .index__design-projects
+      .index__design-projects-margin
+        .index__background.index__background_color_black
+        .index__background-lines.index__background-lines_color_white
       +designProjects(data.designProjects)
+    .index__workflow
+      +workflow()
