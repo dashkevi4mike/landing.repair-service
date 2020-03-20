@@ -1,0 +1,78 @@
+@import '~theme/variables.scss';
+
+.gallery {
+  position: relative;
+  width: 100%;
+
+  &__inner {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 100rem;
+    height: 72rem;
+    margin: 0 auto;
+    justify-content: space-around;
+
+    @include media-breakpoint-down($lg) {
+      height: 56rem;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./imgs/gallery-background.png);
+    background-size: cover;
+  }
+
+  &__shadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+    background-color: black;
+  }
+
+  &__header {
+    width: 26.75rem;
+    padding: 11.33rem 0 4.25rem;
+
+    @include media-breakpoint-down($lg) {
+      padding: 5.33rem 0 3.25rem;
+    }
+  }
+
+  &__images {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-flow: column wrap;
+    width: 66.66rem;
+    height: 93rem;
+    margin-top: -9.58rem;
+
+    @include media-breakpoint-down($lg) {
+      width: 50.66rem;
+      height: 80rem;
+    }
+  }
+
+  &__image {
+    margin: 0 3.58rem 3.33rem 0;
+
+    &:first-child {
+      margin-top: 6.25rem;
+    }
+
+    @include media-breakpoint-down($lg) {
+      width: 23rem;
+    }
+  }
+}

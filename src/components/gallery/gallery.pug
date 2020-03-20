@@ -1,0 +1,24 @@
+include ../sectionTitle/sectionTitle
+include ../tabs/tabs
+
+mixin gallery(styles)
+  - 
+    var defaultActiveTabIndex = 0
+    var tabsList = styles.map(style => style.title)
+
+  .gallery
+    .gallery__background
+    .gallery__shadow
+    .gallery__inner
+      .gallery__navigation
+        .gallery__header
+          +sectionTitle({text: 'We realize your wildest fantasies', theme: 'golden'})
+        .gallery__tabs
+          +tabs('gallery', tabsList, defaultActiveTabIndex, 'vertical')
+      each style, index in styles
+        +tabContent('gallery', index, index === defaultActiveTabIndex)
+          .gallery__content
+            .gallery__images
+              each image in style.images
+                img.gallery__image(src=image)
+        

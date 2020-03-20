@@ -1,9 +1,12 @@
-mixin tabs(scope, tabsList, activeTabIndex)
-  .tabs.js-tabs
+mixin tabs(scope, tabsList, activeTabIndex, align)
+  -
+    var tabsAlignClass = `tabs_align_${align}`
+  .tabs.js-tabs(class=tabsAlignClass)
     each tabName, index in tabsList
       -
-        var tabMClass = `tabs__tab_${index === activeTabIndex ? 'active' : 'inactive'}`
-      .tabs__tab(class=`${tabMClass} js-tab`, data-scope=scope, data-tab-index=index)
+        var tabActiveClass = `tabs__tab_${index === activeTabIndex ? 'active' : 'inactive'}`
+        var tabAlignClass = `tabs__tab_align_${align}`
+      .tabs__tab(class=`${tabActiveClass} ${tabAlignClass} js-tab`, data-scope=scope, data-tab-index=index)
         button.tabs__tab-button=tabName
         .tabs__tab-underline
 

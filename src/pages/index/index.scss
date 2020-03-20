@@ -53,4 +53,12 @@
       display: none;
     }
   }
+
+  &__gallery {
+    margin: 20.25rem 0;
+
+    @include media-breakpoint-down($md) {
+      display: none;
+    }
+  }
 }

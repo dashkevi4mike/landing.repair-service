@@ -21,6 +21,18 @@
     }
   }
 
+  &__tab {
+    &_align_vertical {
+      margin-bottom: 1.83rem;
+    }
+  }
+
+  &_align_vertical {
+    flex-direction: column;
+    margin-bottom: 1.83rem;
+    align-items: start;
+  }
+
   &__tab_active &__tab-underline {
     background-color: $color-second;
   }
