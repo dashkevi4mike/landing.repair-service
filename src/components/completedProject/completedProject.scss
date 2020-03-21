@@ -2,14 +2,9 @@
 
 .completed-project {
   display: flex;
-
-  @include media-breakpoint-down($md) {
-    display: block;
-  }
+  flex-wrap: wrap;
 
   &__title {
-    display: block;
-
     @include media-breakpoint-down($md) {
       text-align: center;
     }
@@ -53,24 +48,11 @@
   }
 
   &__preview {
-    width: 56.58rem;
-
-    @include media-breakpoint-down($lg) {
-      width: 48.58rem;
-    }
+    width: 56.58%;
+    max-width: 56.58rem;
 
     @include media-breakpoint-down($md) {
-      width: 46.58rem;
       margin: 0 auto;
     }
-
-    @include media-breakpoint-down($xs) {
-      width: 36.58rem;
-      margin: 0 auto;
-    }
-  }
-
-  &__image {
-    height: 40.16rem;
   }
 }

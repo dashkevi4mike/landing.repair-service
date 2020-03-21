@@ -11,11 +11,7 @@ class Slider {
   }
   
   _attachEventHandler() {
-    $('.js-slider').slick({
-      speed: 300,
-      centerMode: false,
-      variableWidth: true
-    });
+    $('.js-slider').slick();
   }
 }
   
