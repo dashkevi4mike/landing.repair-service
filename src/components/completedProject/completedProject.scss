@@ -29,7 +29,7 @@
     }
 
     @include media-breakpoint-down($md) {
-      width: 80%;
+      width: 90%;
       margin: 3rem auto 0;
     }
   }
@@ -52,6 +52,7 @@
     max-width: 56.58rem;
 
     @include media-breakpoint-down($md) {
+      width: 90%;
       margin: 0 auto;
     }
   }
