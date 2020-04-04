@@ -12,7 +12,7 @@ mixin header(options)
     a.header__logo(href = '/under-construction.html')
       | IC "Repair Design Project"
     .header__menu
-      +menu({items: options.menuItems})
+      +menu({items: options.menuItems, open: options.position === 'top' ? 'down' : 'up'})
     a.header__phone(href='tel:' + options.tel)=options.tel
     .header__request-call
       +button({'data-attr': 'request-call', text: 'request a call', theme: 'filled'})

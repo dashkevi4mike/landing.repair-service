@@ -263,11 +263,8 @@ block main
       +form({ title: 'Leave a request and our manager will contact you shortly', name: 'request-call'})
     .index__completed-projects
       .index__background.index__background_color_black
-      .index__background-lines.index__background-lines_color_white
-      .index__background-city
       +completedProjects(data.projects)
     .index__online-control
-      .index__background-lines.index__background-lines_color_black
       +onlineControl()
       +typesOfRepair(data.typesOfRepair)
     .index__about-measurement  
@@ -277,15 +274,13 @@ block main
     .index__design-projects
       .index__design-projects-margin
         .index__background.index__background_color_black
-        .index__background-lines.index__background-lines_color_white
       +designProjects(data.designProjects)
     .index__team
       +team(data.members)
     .index__clients
       +ourClients(data.clients)
-    .index__any-questions
-      .index__any-questions-margin
-        +anyQuestions()
-    .index__any-contacts
-      .index__contacts
-        +contacts()
+    .index__contacts
+      +anyQuestions()
+      .index__contacts-margin
+        .index__background.index__background_color_black
+      +contacts()
