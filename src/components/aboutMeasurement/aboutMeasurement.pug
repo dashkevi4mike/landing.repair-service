@@ -1,4 +1,4 @@
-include ../requestMeasurementForm/requestMeasurementForm
+include ../form/form
 
 mixin aboutMeasurement()
   - 
@@ -17,4 +17,4 @@ mixin aboutMeasurement()
               .about-measurement__bullet=(`0${index+1}`)
               p.about-measurement__point-text=step
       .about-measurement__form
-        +requestMeasurementForm()
+        +form({ title: 'Leave a request for free departure of the measurer', name: 'call-measure'})

@@ -3,5 +3,5 @@ mixin input(options)
   .input
     label.input__label(for=options.name)=options.name
     br
-    input.input__input(type=options.type, name=options.name, placeholder=options.placeholder, id=options.id, required=options.required)
+    input.input__input.js-input(type=options.type, name=options.name, placeholder=options.placeholder, id=options.id, required=options.required)
     .input__underline(class=inputClass)

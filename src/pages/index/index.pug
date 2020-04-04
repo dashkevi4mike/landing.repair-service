@@ -1,7 +1,7 @@
 extends ../base/base
 include ../../components/preview/preview
 include ../../components/modal/modal
-include ../../components/requestCallForm/requestCallForm
+include ../../components/form/form
 include ../../components/completedProjects/completedProjects
 include ../../components/onlineControl/onlineControl
 include ../../components/typesOfRepair/typesOfRepair
@@ -10,6 +10,8 @@ include ../../components/gallery/gallery
 include ../../components/designProjects/designProjects
 include ../../components/team/team
 include ../../components/ourClients/ourClients
+include ../../components/anyQuestions/anyQuestions
+include ../../components/contacts/contacts
 
 
 block variables
@@ -258,7 +260,7 @@ block main
   .index
     +preview()
     +modal('request-call')
-      +requestCallForm()
+      +form({ title: 'Leave a request and our manager will contact you shortly', name: 'request-call'})
     .index__completed-projects
       .index__background.index__background_color_black
       .index__background-lines.index__background-lines_color_white
@@ -281,3 +283,9 @@ block main
       +team(data.members)
     .index__clients
       +ourClients(data.clients)
+    .index__any-questions
+      .index__any-questions-margin
+        +anyQuestions()
+    .index__any-contacts
+      .index__contacts
+        +contacts()

@@ -1,0 +1,29 @@
+@import '~theme/variables.scss';
+
+.contacts {
+  &__inner {
+    width: 100%;
+    max-width: 68rem;
+    margin: 4.5rem auto 0;
+  }
+
+  &__address {
+    max-width: 45rem;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-second;
+    font-size: 1.5rem;
+    line-height: 1.38;
+  }
+
+  &__social-icons {
+    display: flex;
+    margin: 2.5rem 0;
+    justify-content: center;
+  }
+
+  &__social-icon {
+    margin-left: 1.5rem;
+  }
+}
