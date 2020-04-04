@@ -1,13 +1,15 @@
 @import '~theme/variables.scss';
 
 .client-card {
-  display: flex;
-  flex-wrap: wrap;
-  width: 30rem;
-  padding: 2rem;
-  padding-bottom: 0;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
-  align-items: center;
+
+  &__main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    padding-bottom: 0;
+    align-items: center;
+  }
 
   &__photo {
     width: 5.5rem;
@@ -25,9 +27,32 @@
 
   &__feedback {
     width: 100%;
-    margin: 1.6rem 0 6.2rem;
+    margin-top: 1.6rem;
     color: #959595;
     font-size: 1.25rem;
     line-height: 1.5;
+  }
+
+  &__labels {
+    position: relative;
+    bottom: -2.1rem;
+    display: flex;
+  }
+
+  &__label {
+    display: flex;
+    height: 4.5rem;
+    margin-right: 1px;
+    padding: 0 1.4rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: $color-second;
+    font-family: 'YesevaOne', serif;
+    font-size: 1.5rem;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 1.5rem;
   }
 }

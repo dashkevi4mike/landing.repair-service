@@ -15,4 +15,5 @@ mixin ourClients(clients)
         })
       .our-clients__list
         each client in clients
-          +clientCard(client)
+          .our-clients__list-item
+            +clientCard(client)
