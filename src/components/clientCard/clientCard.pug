@@ -1,6 +1,13 @@
 mixin clientCard(client)
   .client-card
-    img.client-card__photo(src=client.photo)
-    .client-card__name=client.name
-    p.client-card__feedback=client.feedback
-
+    .client-card__main-content
+      img.client-card__photo(src=client.photo)
+      .client-card__name=client.name
+      p.client-card__feedback=client.feedback
+    .client-card__labels
+      .client-card__label
+        img.client-card__icon(src=require('components/clientCard/icons/area.svg'))
+        p.client-card__label-text=`${client.area} m2`
+      .client-card__label
+        img.client-card__icon(src=require('components/clientCard/icons/duration.svg'))
+        p.client-card__label-text=`${client.duration} days`
