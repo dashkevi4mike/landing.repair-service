@@ -1,0 +1,1 @@
+import './teamMemberCard.scss';

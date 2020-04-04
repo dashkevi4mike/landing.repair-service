@@ -8,7 +8,11 @@ mixin designProjects(projects)
       .design-projects__title
         +sectionTitle({text: 'design project', theme: 'black', icon: 'measures'})
       .design-projects__description
-        +additionalDescription('Design project not only helps to make the repair of your apartment more modern, but also significantly reduces the cost of materials and reduces the time of repair work.')
+        +additionalDescription({
+          text: 'Design project not only helps to make the repair of your apartment more modern, but also significantly reduces the cost of materials and reduces the time of repair work.', 
+          theme: 'black',
+          withLine: false
+        })
       .design-projects__cards
         each project in projects
           .design-projects__card
