@@ -1,0 +1,12 @@
+mixin teamMemberCard(member)
+  - var experienceText = `Work experience ${member.experienceInYears} years`
+
+  .team-member-card
+    .team-member-card__label
+      img.team-member-card__icon(src=member.icon)
+    .team-member-card__photo-wrapper
+      img.team-member-card__photo(src=member.photo)
+    .team-member-card__info
+      p.team-member-card__name=member.name
+      p.team-member-card__job=member.jobPosition
+      p.team-member-card__experience=experienceText

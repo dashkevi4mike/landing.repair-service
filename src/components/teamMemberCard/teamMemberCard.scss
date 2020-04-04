@@ -1,0 +1,54 @@
+@import '~theme/variables.scss';
+
+.team-member-card {
+  display: block;
+  width: 25.58rem;
+  height: 40rem;
+
+  &__label {
+    position: absolute;
+    display: flex;
+    width: 5.83rem;
+    height: 5.83rem;
+    background-color: $color-second;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__photo-wrapper {
+    padding-top: 2.92rem;
+    padding-left: 2.92rem;
+  }
+
+  &__info {
+    position: relative;
+    margin: -6.42rem 2rem 0 4.92rem;
+    padding-top: 1.66rem;
+    text-align: center;
+    background-color: white;
+  }
+
+  &__name {
+    font-family: 'YesevaOne', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.3;
+  }
+
+  &__job {
+    margin-bottom: 2rem;
+    color: #959595;
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  &__experience {
+    padding: 1rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: $color-second;
+    font-family: 'YesevaOne', serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+}

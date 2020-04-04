@@ -1,6 +1,7 @@
 include ../sectionTitle/sectionTitle
 include ../text/text
 include ../property/property
+include ../slider/slider
 
 mixin completedProject(project)
 
@@ -14,6 +15,7 @@ mixin completedProject(project)
         each val in project.properties
           .completed-project__property
             +property(val)
-    .completed-project__preview.js-completed-project__preview
-      each image in project.images
-        img.completed-project__image(src=image)
+    .completed-project__preview
+      +slider()
+        each image in project.images
+          img.completed-project__image(src=image)

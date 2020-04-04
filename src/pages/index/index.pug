@@ -8,6 +8,7 @@ include ../../components/typesOfRepair/typesOfRepair
 include ../../components/aboutMeasurement/aboutMeasurement
 include ../../components/gallery/gallery
 include ../../components/designProjects/designProjects
+include ../../components/team/team
 
 
 block variables
@@ -200,6 +201,29 @@ block variables
           costPerMeter: 900,
           options: [ 'Dismantling of old coatings', 'Wallpapering', 'Painting walls and ceilings', 'Laying flooring', 'Replacing plumbing', 'Replacing sockets and switches', 'Replacing doors', 'Wall reamers', '3D visualization', 'Bill of materials', 'Departure for a selection of materials', 'Furniture selection']
         }
+      ],
+      members: [
+        {
+          icon: require('./icons/idea.svg'),
+          photo: require('./imgs/manager.png'),
+          name: 'Dmitry Tylyakov',
+          jobPosition: 'Project manager',
+          experienceInYears: 8
+        },
+        {
+          icon: require('./icons/designer.svg'),
+          photo: require('./imgs/designer.png'),
+          name: 'Larisa Kotlyarova',
+          jobPosition: 'Designer',
+          experienceInYears: 6
+        },
+        {
+          icon: require('./icons/portfolio.svg'),
+          photo: require('./imgs/foreman.png'),
+          name: 'Alexey Efimov',
+          jobPosition: 'Foreman',
+          experienceInYears: 12
+        }
       ]
     }
 
@@ -225,4 +249,9 @@ block main
     .index__gallery 
       +gallery(data.styles)
     .index__design-projects
+      .index__design-projects-margin
+        .index__background.index__background_color_black
+        .index__background-lines.index__background-lines_color_white
       +designProjects(data.designProjects)
+    .index__team
+      +team(data.members)

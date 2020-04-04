@@ -10,9 +10,12 @@
 
   &__text {
     width: 100%;
-    margin-bottom: 8.83rem;
     text-align: center;
     font-size: 1.66rem;
     line-height: 1.5;
+  }
+
+  &__text_theme_white {
+    color: white;
   }
 }

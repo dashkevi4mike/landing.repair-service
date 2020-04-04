@@ -1,0 +1,21 @@
+include ../sectionTitle/sectionTitle
+include ../additionalDescription/additionalDescription
+include ../teamMemberCard/teamMemberCard
+
+mixin team(members)
+  section.team
+    .team__inner
+      .team__title
+        +sectionTitle({text: 'Our team', theme: 'white', icon: 'team'})
+      .team__description
+        +additionalDescription({
+          text: 'Our team has helped to become happier for more than 500 families and we are not going to stop', 
+          theme: 'white',
+          withLine: false
+        })
+      .team__members
+        each member in members
+          +teamMemberCard(member)
+
+
+      
