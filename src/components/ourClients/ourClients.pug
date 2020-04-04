@@ -1,0 +1,18 @@
+include ../sectionTitle/sectionTitle
+include ../additionalDescription/additionalDescription
+include ../clientCard/clientCard
+
+mixin ourClients(clients)
+  section.our-clients
+    .our-clients__inner
+      .our-clients__title
+        +sectionTitle({text: 'Our clients', theme: 'black', icon: 'clients'})
+      .our-clients__description
+        +additionalDescription({
+          text: '80% of our customers recommend us to their friends and family.', 
+          theme: 'black',
+          withLine: false
+        })
+      .our-clients__list
+        each client in clients
+          +clientCard(client)

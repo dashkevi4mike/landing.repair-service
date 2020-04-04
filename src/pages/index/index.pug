@@ -9,6 +9,7 @@ include ../../components/aboutMeasurement/aboutMeasurement
 include ../../components/gallery/gallery
 include ../../components/designProjects/designProjects
 include ../../components/team/team
+include ../../components/ourClients/ourClients
 
 
 block variables
@@ -224,6 +225,29 @@ block variables
           jobPosition: 'Foreman',
           experienceInYears: 12
         }
+      ],
+      clients: [
+        {
+          photo: require('./imgs/feedback1.png'),
+          name: 'Fedosova Maria Konstantinovna',
+          feedback: 'I want to thank the guys for their work. we put your shower part in repair. i am very grateful that i referred to the repair as to my own. great thanks i express the project to georgia for its professionalism and approach. the repair process was turned out in terms, faster than anticipated. team mobile and professional. works performed qualitatively without comments. quality satisfied. prices democratic. i recommend these masters.',
+          area: 40,
+          duration: 48,
+        },
+        {
+          photo: require('./imgs/feedback2.png'),
+          name: 'Afanasyev Sergey Alexandrovich',
+          feedback: 'I want to thank the guys for their work. we put your shower part in repair. i am very grateful that i referred to the repair as to my own. great thanks i express the project to georgia for its professionalism and approach. the repair process was turned out in terms, faster than anticipated. team mobile and professional. works performed qualitatively without comments. quality satisfied. prices democratic. i recommend these masters.',
+          area: 90,
+          duration: 128,
+        },
+        {
+          photo: require('./imgs/feedback3.png'),
+          name: 'Kiriev Egor Leonidovich',
+          feedback: 'I want to thank the guys for their work. we put your shower part in repair. i am very grateful that i referred to the repair as to my own. great thanks i express the project to georgia for its professionalism and approach. the repair process was turned out in terms, faster than anticipated. team mobile and professional. works performed qualitatively without comments. quality satisfied. prices democratic. i recommend these masters.',
+          area: 56,
+          duration: 86,
+        }
       ]
     }
 
@@ -255,3 +279,5 @@ block main
       +designProjects(data.designProjects)
     .index__team
       +team(data.members)
+    .index__clients
+      +ourClients(data.clients)

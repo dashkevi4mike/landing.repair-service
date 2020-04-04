@@ -1,0 +1,24 @@
+.our-clients {
+  &__inner {
+    width: 100%;
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 2.58rem;
+  }
+
+  &__description {
+    width: 35.85%;
+    min-width: 300px;
+    margin: 0 auto 8.83rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+    justify-content: space-around;
+  }
+}

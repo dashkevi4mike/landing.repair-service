@@ -1,0 +1,33 @@
+@import '~theme/variables.scss';
+
+.client-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30rem;
+  padding: 2rem;
+  padding-bottom: 0;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  align-items: center;
+
+  &__photo {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+  }
+
+  &__name {
+    width: 60%;
+    padding-left: 2rem;
+    font-family: 'YesevaOne', serif;
+    font-size: 1.5rem;
+    line-height: 1.27;
+  }
+
+  &__feedback {
+    width: 100%;
+    margin: 1.6rem 0 6.2rem;
+    color: #959595;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+}
