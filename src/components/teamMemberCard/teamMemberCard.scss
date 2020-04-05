@@ -6,7 +6,7 @@
     display: flex;
     width: 5.83rem;
     height: 5.83rem;
-    background-color: $color-second;
+    background-color: $golden;
     justify-content: center;
     align-items: center;
   }
@@ -21,7 +21,7 @@
     margin: -6.42rem 2rem 0 4.92rem;
     padding-top: 1.66rem;
     text-align: center;
-    background-color: white;
+    background-color: $white;
   }
 
   &__name {
@@ -41,8 +41,8 @@
   &__experience {
     padding: 1rem;
     text-transform: uppercase;
-    color: white;
-    background-color: $color-second;
+    color: $white;
+    background-color: $golden;
     font-family: 'YesevaOne', serif;
     font-size: 1.1rem;
     line-height: 1.5;

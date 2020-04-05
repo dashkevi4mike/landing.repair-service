@@ -8,7 +8,7 @@
     cursor: pointer;
     text-transform: uppercase;
     opacity: 0.3;
-    color: white;
+    color: $white;
     border: none;
     background: none;
     font-family: 'YesevaOne', serif;
@@ -17,7 +17,7 @@
 
     &:hover {
       opacity: 1;
-      color: $color-second;
+      color: $golden;
     }
   }
 
@@ -34,12 +34,12 @@
   }
 
   &__tab_active &__tab-underline {
-    background-color: $color-second;
+    background-color: $golden;
   }
 
   &__tab_active &__tab-button {
     opacity: 1;
-    color: $color-second;
+    color: $golden;
   }
 
   &__tab-underline {

@@ -1,3 +1,5 @@
+@import '~theme/variables.scss';
+
 .any-questions {
   &__inner {
     width: 100%;
@@ -7,6 +9,6 @@
 
   &__form {
     padding: 4rem 6rem;
-    background-color: black;
+    background-color: $black;
   }
 }

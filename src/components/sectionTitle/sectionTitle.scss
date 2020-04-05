@@ -11,21 +11,21 @@
   }
 
   &__text_theme_golden {
-    color: $color-second;
+    color: $golden;
     font-size: 2.25rem;
     line-height: 1.38;
   }
 
   &__text_theme_white {
     text-align: center;
-    color: white;
+    color: $white;
     font-size: 1.66rem;
     line-height: 1.38;
   }
 
   &__text_theme_black {
     text-align: center;
-    color: black;
+    color: $black;
     font-size: 1.66rem;
     line-height: 1.38;
   }
@@ -45,6 +45,6 @@
     display: inline-block;
     width: 2.66rem;
     height: 1.5px;
-    background-color: $color-second;
+    background-color: $golden;
   }
 }

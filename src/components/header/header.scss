@@ -15,7 +15,7 @@
     flex: 0 0 auto;
     text-decoration: none;
     text-transform: uppercase;
-    color: $color-second;
+    color: $golden;
     font-family: 'FuturaDemiC', sans-serif;
     font-size: 1.16rem;
 
@@ -35,12 +35,12 @@
     text-decoration: none;
     text-decoration: underline;
     text-transform: uppercase;
-    color: $color-second;
-    background-color: $color-first;
+    color: $golden;
+    background-color: $black;
     font-size: 1.16rem;
 
     &:hover {
-      color: $color-second-active;
+      color: $golden-active;
     }
 
     @include media-breakpoint-down($md) {

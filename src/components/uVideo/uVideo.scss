@@ -28,7 +28,7 @@
     width: 100%;
     height: 100%;
     opacity: 0.8;
-    background-color: black;
+    background-color: $black;
   }
 
   &__play {
@@ -37,17 +37,17 @@
     cursor: pointer;
     border: none;
     border-radius: 50%;
-    background-color: $color-second;
+    background-color: $golden;
 
     /* doiuse-disable */
-    filter: drop-shadow(0 0 2px $color-second);
+    filter: drop-shadow(0 0 2px $golden);
 
     &::before {
       position: absolute;
       top: 2.2rem;
       right: 1.6rem;
       content: '\25B6';
-      color: white;
+      color: $white;
       font-size: 3.5rem;
 
       @include media-breakpoint-down($md) {
