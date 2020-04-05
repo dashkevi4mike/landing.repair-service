@@ -6,9 +6,11 @@ $md: 991px;
 $lg: 1199px;
 $xl: 1440px;
 
-$color-first: #131313;
-$color-second: #e3b873;
-$color-second-active: #e6b465;
+$black: #131313;
+$golden: #e3b873;
+$golden-active: #e6b465;
+$white: white;
+$red: red;
 
 /***** Mixins *****/
 @mixin media-breakpoint-up($width) {

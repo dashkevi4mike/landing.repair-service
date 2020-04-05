@@ -5,7 +5,7 @@
     width: 4.58rem;
     height: 2px;
     margin: 0 auto 3rem;
-    background-color: $color-second;
+    background-color: $golden;
   }
 
   &__text {
@@ -16,6 +16,6 @@
   }
 
   &__text_theme_white {
-    color: white;
+    color: $white;
   }
 }

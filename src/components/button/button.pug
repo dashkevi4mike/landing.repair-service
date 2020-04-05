@@ -1,5 +1,3 @@
 mixin button(options)
-  if !options
-    - options = {}
   - elClass=`button_theme_${options.theme}`
   button.button(class=elClass, type=options.type, data-modal=options['data-attr'])=options.text

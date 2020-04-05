@@ -6,11 +6,11 @@
   height: 2.3rem;
   cursor: pointer;
   border-radius: 50%;
-  background-color: $color-second;
+  background-color: $golden;
   justify-content: center;
   align-items: center;
 
   &:hover {
-    background-color: $color-second-active;
+    background-color: $golden-active;
   }
 }

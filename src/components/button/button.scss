@@ -9,18 +9,18 @@
   font-size: 1rem;
 
   &:hover {
-    border-color: $color-second-active;
-    background-color: $color-second-active;
+    border-color: $golden-active;
+    background-color: $golden-active;
   }
 
   &_theme_filled {
-    color: white;
-    border-color: $color-second;
-    background-color: $color-second;
+    color: $white;
+    border-color: $golden;
+    background-color: $golden;
   }
 
   &_theme_transparent {
-    color: white;
+    color: $white;
     background-color: transparent;
   }
 }

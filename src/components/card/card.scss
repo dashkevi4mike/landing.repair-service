@@ -9,7 +9,7 @@
     position: relative;
     margin: -10.66rem 2.58rem 0;
     padding: 2.33rem;
-    background-color: white;
+    background-color: $white;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
 
     @include media-breakpoint-down($md) {
@@ -39,8 +39,8 @@
     margin-left: 2.58rem;
     padding: 1rem 2rem;
     text-transform: uppercase;
-    color: white;
-    background-color: $color-second;
+    color: $white;
+    background-color: $golden;
     font-family: 'YesevaOne', serif;
     font-size: 1.5rem;
     line-height: 1.38;
