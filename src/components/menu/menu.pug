@@ -12,6 +12,6 @@ mixin menu(options)
   .menu.js-menu
     .menu__button.js-menu__button
       include ./img/menu-options.svg
-    nav.menu__list.js-menu__list
+    nav.menu__list.js-menu__list(class=`menu__list_direction_${options.open}`)
       for item in options.items
         a.menu__item(href = item.href)= item.name

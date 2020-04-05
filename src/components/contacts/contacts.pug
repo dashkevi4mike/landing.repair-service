@@ -1,0 +1,15 @@
+include ../socialIcon/socialIcon
+
+mixin contacts()
+  section.contacts
+    .contacts__inner
+      p.contacts__address
+        | Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29
+      .contacts__social-icons
+        .contacts__social-icon
+          +socialIcon('email', 'mailto:fake@gmail.com')
+        .contacts__social-icon
+          +socialIcon('instagram', 'https://www.instagram.com/')
+      img.contacts__map(src=require('components/contacts/imgs/map.png'))
+
+      

@@ -17,11 +17,11 @@ html
       +layout__header()
         +layout__container({basis: 1200, align: 'center'})
           block header
-            +header({menuItems: locals.menuItems, tel: '+7 (928) 768-32-39'})
+            +header({menuItems: locals.menuItems, tel: '+7 (928) 768-32-39', position: 'top'})
       +layout__main()
           block main
       +layout__footer()
         +layout__container({basis: 1200, align: 'center'})
           block footer
-            +header({menuItems: locals.menuItems, tel: '+7 (928) 768-32-39'})
+            +header({menuItems: locals.menuItems, tel: '+7 (928) 768-32-39', position: 'bottom'})
     block scripts

@@ -44,6 +44,16 @@
         padding: 1rem 2rem 2rem;
         background-color: $color-first;
       }
+
+      &_direction_down {
+        top: 100%;
+        bottom: auto;
+      }
+
+      &_direction_up {
+        top: auto;
+        bottom: 100%;
+      }
     }
   }
 

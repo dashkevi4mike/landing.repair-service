@@ -33,7 +33,7 @@
     }
   }
 
-  &__input:invalid + &__underline {
+  &__input_toched:invalid + &__underline {
     border-color: red;
   }
 }
