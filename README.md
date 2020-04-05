@@ -1,8 +1,6 @@
 # repair-landing
-This project uses Starter Kit for PSD-to-HTML projects with Webpack and SCSS
+This project uses Starter Kit for PSD-to-HTML projects with Webpack and SCSS. Project is available here https://repair-landing.firebaseapp.com/
 
-## Features
-We use Pug and Stylus to create static layout page for our clients who desires qualified "PSD to HTML" work. 
 ### File structure
 ```
 conf
